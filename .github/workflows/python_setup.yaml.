@@ -16,7 +16,7 @@ jobs:
 
     steps:
     - name: Checkout Repository
-    - uses: actions/checkout@v4
+      uses: actions/checkout@v4
     
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -28,7 +28,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8 pytest
         
-    - name: Verify Pythin Version
+    - name: Verify Python Version
       run: python --version
 
     - name: Run Flake8 Linting
